@@ -1,6 +1,6 @@
 {
   "name": "od-vsdynamic",
-  "description": "od-virtualscroll - dynamic example",
+  "description": "od-virtualscroll: dynamic example",
   "homepage": "https://dinony.github.io/od-vsdynamic/",
   "scripts": {
     "build": "ngc -p tsconfig-aot.json && rollup -c rollup.config.js",
