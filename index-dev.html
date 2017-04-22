@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>od-virtualscroll - dynamic example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Polyfills -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.min.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>SystemJS.import('src').catch(function(err) {console.error(err);});</script>
+  </head>
+  <body style="margin: 0; background-color: #56D8FF; overflow: hidden; font-family: 'Helvetica Neue', Helvetica, sans-serif;">
+    <app-shell>loading...</app-shell>
+  </body>
+</html> 
