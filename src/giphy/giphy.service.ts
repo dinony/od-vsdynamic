@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class GiphyService {
   private _apiKey = 'dc6zaTOxFJmzC';
-  private _apiUrl = 'http://api.giphy.com/v1/gifs';
+  private _apiUrl = 'https://api.giphy.com/v1/gifs';
 
   constructor(private _http: Http) {}
 
