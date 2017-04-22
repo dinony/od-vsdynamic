@@ -61,5 +61,5 @@
     "uglify-js-harmony": "^2.7.5",
     "tslint": "^5.1.0"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
