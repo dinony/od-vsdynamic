@@ -17,7 +17,7 @@ import 'rxjs/add/operator/publish';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/toPromise';
 
-import {ScrollObservableService, IVirtualScrollOptions, SetScrollTopCmd} from 'od-virtualscroll';
+import {IVirtualScrollOptions, ScrollObservableService, SetScrollTopCmd} from 'od-virtualscroll';
 import {ConsoleWriterService} from 'od-vsdebug';
 
 import {GiphyService} from './giphy/giphy.service';
@@ -68,11 +68,11 @@ import {GiphyService} from './giphy/giphy.service';
           <input type="checkbox" [formControl]="debug"> Attach console writer
         </div>
       </div>
-      <od-virtual-scroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsScrollTop]="scrollTop$" [vsEqualsFunc]="equals">
+      <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsScrollTop]="scrollTop$" [vsEqualsFunc]="equals">
         <ng-template let-item>
           <giphy-tile [item]="item"></giphy-tile>
         </ng-template>
-      </od-virtual-scroll>
+      </od-virtualscroll>
     </div>`
 })
 export class AppComponent implements OnInit, OnDestroy {

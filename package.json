@@ -40,8 +40,8 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
     "zone.js": "^0.8.4",
-    "od-virtualscroll": "^0.1.0",
-    "od-vsdebug": "^1.0.0"
+    "od-virtualscroll": "^0.2.0",
+    "od-vsdebug": "^1.1.0"
   },
   "devDependencies": {
     "@angular/compiler": "^4.0.1",
