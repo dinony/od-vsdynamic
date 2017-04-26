@@ -17,7 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["src/app.module.ts", "src/main-aot.ts"],
+  "include": ["tmpBuild/app.module.ts", "tmpBuild/main-aot.ts"],
   "angularCompilerOptions": {
     "genDir": "aot",
     "skipMetadataEmit" : true

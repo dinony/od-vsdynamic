@@ -5,7 +5,7 @@ import uglify from 'rollup-plugin-uglify'
 import {minify} from 'uglify-js-harmony';
 
 export default {
-  entry: 'src/main-aot.js',
+  entry: 'tmpBuild/main-aot.js',
   dest: 'build.gen.js', // output a single application bundle
   sourceMap: true,
   format: 'iife',
