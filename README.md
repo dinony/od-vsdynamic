@@ -1,6 +1,6 @@
 # od-vsdynamic
 
-Scroll through GIFs, without the risk of melting your CPU. ([GIPHY API](https://api.giphy.com/))
+Scroll through GIFs, without the risk of a CPU meltdown. ([GIPHY API](https://api.giphy.com/))
 
 See [od-virtualscroll](https://github.com/dinony/od-virtualscroll) for details.
 
