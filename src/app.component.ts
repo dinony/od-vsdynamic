@@ -24,39 +24,7 @@ import {GiphyService} from './giphy/giphy.service';
 
 @Component({
   selector: 'app-shell',
-  styles: [`
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      margin: 0 auto;
-      width: 80%;
-    }
-
-    h1 {
-      color: white;
-    }
-
-    .tiles-container {
-      border: 4px dashed white;
-      min-width: 202px;
-      height: 80%;
-    }
-
-    /deep/ .od-scroll-container {
-      margin: 0 auto;
-    }
-
-    .searchInput {
-      height: 30px;
-      margin-bottom: 10px;
-      width: 200px;
-    }
-
-    .formGroup {
-      display: inline-block;
-    }
-  `],
+  styleUrls: ['src/app.component.css'],
   template: `
     <div class="container">
       <h1>od-virtualscroll</h1>
