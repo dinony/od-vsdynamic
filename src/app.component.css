@@ -1,19 +1,19 @@
-.container {
+.outer-container {
   display: flex;
-  flex-direction: column;
   height: 100vh;
-  margin: 0 auto;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: white;
 }
 
-.tiles-container {
-  border: 4px dashed white;
-  min-width: 202px;
-  height: 80%;
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  width: 70%;
 }
 
 .searchInput {
@@ -24,6 +24,13 @@ h1 {
 
 .formGroup {
   display: inline-block;
+}
+
+.border-wrapper {
+  border: 4px dashed white;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
 }
 
 /deep/ .od-scroll-container {

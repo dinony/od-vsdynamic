@@ -26,21 +26,27 @@ import {GiphyService} from './giphy/giphy.service';
   selector: 'app-shell',
   styleUrls: ['src/app.component.css'],
   template: `
-    <div class="container">
-      <h1>od-virtualscroll</h1>
-      <div>
-        <div class="formGroup">
-          <input class="searchInput" type="text" [formControl]="search" placeholder="Search...">
+     <div class="outer-container">
+      <div class="inner-container">
+        <div class="header">
+          <h1>od-virtualscroll</h1>
+          <div>
+            <div class="formGroup">
+              <input class="searchInput" type="text" [formControl]="search" placeholder="Search...">
+            </div>
+            <div class="formGroup">
+              <input type="checkbox" [formControl]="debug"> Attach console writer
+            </div>
+          </div>
         </div>
-        <div class="formGroup">
-          <input type="checkbox" [formControl]="debug"> Attach console writer
-        </div>
+        <div class="border-wrapper">
+          <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsScrollTop]="scrollTop$" [vsEqualsFunc]="equals">
+            <ng-template let-item>
+              <giphy-tile [item]="item"></giphy-tile>
+            </ng-template>
+          </od-virtualscroll>
+        <div>
       </div>
-      <od-virtualscroll class="tiles-container" [vsData]="data$" [vsOptions]="options$" [vsScrollTop]="scrollTop$" [vsEqualsFunc]="equals">
-        <ng-template let-item>
-          <giphy-tile [item]="item"></giphy-tile>
-        </ng-template>
-      </od-virtualscroll>
     </div>`
 })
 export class AppComponent implements OnInit, OnDestroy {
