@@ -1,9 +1,9 @@
 import {Component, HostListener, Input, OnChanges, SimpleChange} from '@angular/core';
 
 @Component({
-  selector: 'giphy-tile',
+  selector: 'giphy-cell',
   styles: [`
-    .tile {
+    .cell {
       box-sizing: border-box;
       display: inline-block;
       height: 202px;
@@ -19,14 +19,14 @@ import {Component, HostListener, Input, OnChanges, SimpleChange} from '@angular/
     }
   `],
   template: `
-    <div class="tile">
+    <div class="cell">
       <a target="_blank" [href]="itemIn.url">
         <img [src]="imgSrc">
       </a>
     </div>
   `,
 })
-export class TileComponent implements OnChanges {
+export class CellComponent implements OnChanges {
   @Input('item') itemIn: any;
   imgSrc: string;
 

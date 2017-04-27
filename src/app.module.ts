@@ -9,11 +9,11 @@ import {VirtualScrollDebugModule} from 'od-vsdebug';
 import {GiphyModule} from './giphy/giphy.module';
 
 import {AppComponent} from './app.component';
-import {TileComponent} from './tile.component';
+import {CellComponent} from './cell.component';
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent, TileComponent],
+  declarations: [AppComponent, CellComponent],
   imports: [
     BrowserModule,
     HttpModule,
