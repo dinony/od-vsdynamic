@@ -40,7 +40,7 @@ import {GiphyService} from './giphy/giphy.service';
           </div>
         </div>
         <div class="border-wrapper">
-          <od-virtualscroll class="cells-container" [vsData]="data$" [vsOptions]="options$" [vsScrollTop]="scrollTop$" [vsEqualsFunc]="equals">
+          <od-virtualscroll class="cells-container" [vsData]="data$" [vsOptions]="options$" [vsUserCmd]="scrollTop$" [vsEqualsFunc]="equals">
             <ng-template let-item>
               <giphy-cell [item]="item"></giphy-cell>
             </ng-template>
